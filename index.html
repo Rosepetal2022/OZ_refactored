@@ -45,7 +45,7 @@
       <!-- account navigation -->
 
       <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="oz_logo" href="index.html" title="Oz Incorporated">
+        <a class="oz_logo_nav" href="index.html" title="Oz Incorporated">
           <img src="images/logo.png" alt="Oz Incorporated Logo" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,8 +53,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="the_farm.html">The Farm<span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="the_farm.html">The Farm</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="our_team.html">Our Team</a>
@@ -80,36 +80,23 @@
           </ul>
         </div>
       </nav>
-    <!-- END: header content -->
-    <!-- START: content -->
-    <div id="content" class="home">
-      <!-- START: gallery -->
-      <div class="gallery" id="gallery">
-        <div class="basin holder">
+      <section class="carousel_container" aria-label="newest photos">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev" type="button">&#8656;</button>
+          <button class="carousel-button next" data-carousel-button="next" type="button">&#8658;</button>
+        <ul data-slides>
+          <li class="slide" data-active>
           <img src="images/carousel/1.jpg" alt="" />
+        </li>
+        <li class="slide">
           <img src="images/carousel/2.jpg" alt="" />
+        </li>
+        <li class="slide">
           <img src="images/carousel/3.jpg" alt="" />
-          <img src="images/carousel/4a.jpg" alt="" />
-          <span title="">images/carousel/6.jpg</span>
-          <span title="">images/carousel/7.jpg</span>
-          <span title="">images/carousel/8.jpg</span>
-          <span title="">images/carousel/9.jpg</span>
-          <span title="">images/carousel/10.jpg</span>
-          <span title="">images/carousel/11.jpg</span>
-          <span title="">images/carousel/12a.jpg</span>
-          <span title="">images/carousel/13.jpg</span>
-          <span title="">images/carousel/14.jpg</span>
-          <span title="">images/carousel/15.jpg</span>
-          <span title="">images/carousel/16.jpg</span>
-          <span title="">images/carousel/17.jpg</span>
-          <span title="">images/carousel/18.jpg</span>
-          <span title="">images/carousel/19.jpg</span>
-
-        </div>
-        <img class="slider left" src="images/icons/gallery/left_arrow.png" alt="scroll left" />
-        <img class="slider right" src="images/icons/gallery/right_arrow.png" alt="scroll right" />
+        </li>
+        </ul>
       </div>
-      <!-- END: gallery -->
+      </section>
       <div class="content">
         <div class="body left deskman">
           <h2> The OZ INC. Mission </h2>
@@ -186,11 +173,16 @@
       <img id="footer-logo" src="images/logo.png" alt="Oz Incorporated Logo" />
     </div>
 
-    <div class="footer-div">
+    <footer class="footer-div">
       <div class="footer-content">
-        <h3 class="footer-content-title">Contact</h3>
+        <h3 class="footer-content-title">Head Trainer</h3>
         <p>Shelley Campf</p>
-        <p>ozinv@yahoo.com</p>
+        <p>ozinc@yahoo.com</p>
+      </div>
+      <div class="footer-content">
+        <h3 class="footer-content-title">Follow Us</h3>
+        <p>LOGO PLACEHOLDER</p>
+        <p>LOGO PLACEHOLDER</p>
       </div>
       <div class="footer-content">
         <h3 class="footer-content-title">Location</h3>
@@ -202,11 +194,13 @@
         <p>Canby, OR 97013</p>
       </div>
       <div class="footer-content">
-        <h3 class="footer-content-title">Follow Us</h3>
-        <p>LOGO PLACEHOLDER</p>
-        <p>LOGO PLACEHOLDER</p>
+        <h3 class="footer-content-title">Training Staff</h3>
+        <p>Caleb Cooney   402.206.4095</p>
+        <p>Jessica Gleason   541.335.1833</p> 
+        <p>Mia Minervini   503.616.1173</p> 
+        <p>Emily Perkins   503.919.9939</p>    
       </div>
-    </div>
+    </footer>
 
     <div class="bottom-footer">
       All content Copyright 2023 OZ Incorporated. All rights reserved.
@@ -221,5 +215,6 @@
 <script language="javascript">geovisit();</script><noscript><img
     src="http://visit.webhosting.yahoo.com/visit.gif?us1329752159" alt="setstats" border="0" width="1"
     height="1"></noscript>
+<script src="scripts/carousel.js"></script>
 
 </html>

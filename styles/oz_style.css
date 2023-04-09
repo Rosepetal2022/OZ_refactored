@@ -483,10 +483,106 @@ body.loading {
 }
 
 
+
+
+/*Start of the refactor CSS*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0'
+}
+
+/*NAV STYLE STARTS*/
+#main_nav {
+  border-bottom: #244f26 8px solid;
+}
+
+.nav-item {
+  font-size: 1rem;
+}
+
+.oz_logo_nav {
+  padding: 1rem;
+}
+
+
+/*NAV STYLE ENDS*/
+
+/*CAROUSEL STYLE STARTS*/
+.carousel {
+  border-top: #002D56 8px solid;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 400ms opacity ease-in-out;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0,0,0,.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background: rgba(0,0,0,.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.prev {
+  left: 1rem;
+}
+
+.next {
+  right: 1rem;
+}
+/*CAROUSEL STYLE ENDS*/
+
+/*FOOTER STYLE STARTS*/
 #footer {
   background-color: white;
-  height: 300px;
-  padding-bottom: 50px;
+  color: #002D56;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -494,6 +590,7 @@ body.loading {
 .footer-div {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 0px;
 }
 
 .footer-content {
@@ -519,3 +616,5 @@ body.loading {
   padding: 1.5rem;
   font-size: .75rem;
 }
+
+/*FOOTER STYLE ENDS*/
