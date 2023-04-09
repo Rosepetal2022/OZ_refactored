@@ -1,0 +1,103 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-size: 10px;
+}
+div {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  width: auto;
+  position: relative;
+  border: none;
+  outline: none;
+  z-index: 0;
+}
+form, fieldset {
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  position: relative;
+  border: none;
+  outline: none;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, li, dl, dt, dd, table, th, td, legend, img {
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  z-index: 0;
+  outline: none;
+  width: auto;
+  text-align: inherit;
+}
+object, embed {
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  z-index: 0;
+  outline: none;
+}
+h4, h5, h6, p, blockquote, li, dt, dd, th, td, legend {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height:1.6em;
+  font-size: 1em;
+}
+h1, h2, h3 {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height:1.2em;
+  font-size: 1em;
+}
+hr, br {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  z-index: 0;
+  display: block;
+  clear: both;
+}
+em, strong, span, del, h6, b, a, small, abbr {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  line-height: inherit;
+  z-index: 0;
+  display: inline;
+  border: none;
+}
+button, a, input[type=submit] {
+  outline: 0 none #fff;
+  cursor: pointer;
+}
+button:focus, a:focus, input:focus {
+  outline: 0 none #fff;
+}
+button:active, a:active, input:active {
+  outline: 0 none #fff;
+}
+button:hover, a:hover, input:hover {
+  outline: 0 none #fff;
+}
+img {
+  color: #fff;
+}
+ul, ol {
+  list-style: none;
+}

@@ -1,0 +1,143 @@
+/*	------------------------- colors ---------------------------
+  deep blue : #002d56;
+  navy blue : #011e39;
+  light blue : #bfcad5;
+  grey : #959599;
+  darker_grey: #555560;
+  dark_grey : #252530;
+  green : #005826;
+*/
+div.tri_wrap_middle {
+  clear: both;
+  top: 10px;
+}
+div.tri_wrap_lower {
+  padding: 5px 20px;
+  min-height:350px;
+}
+div.tri_wrap_middle, div.tri_wrap_middle div {
+  float: none;
+}
+#clear_fix_quick_hack {
+  clear: both;
+}
+#sidebar {
+  width: 25%;
+  float: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+#sidebar ul {
+  padding-bottom: 10px;
+}
+#sidebar ul h2 {
+  font-size: 1.8em;
+  color: #011e39;
+}
+#sidebar ul a {
+  font-size: 1.15em;
+}
+#sidebar ul ul {
+  
+}
+#sidebar ul ul a {
+  
+}
+
+input#searchsubmit {
+  display: block;
+  text-align: center;
+  height: 33px;
+  padding-bottom: 8px;
+  width: 82px;
+  margin-top: 0;
+  margin-left: -3px;
+  font-size: 1.1em;
+  background: transparent url(../images/icons/buttons/blue_button.png) no-repeat scroll 50% 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 2.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#content {
+  width: 72%;
+  float: left;
+  padding-right: 3%
+}
+.column.full{
+  width: 100%;
+  padding-top: 20px;
+}
+.blog .deskman p {
+  font-style: normal;
+}
+.blog .navigation {
+  float: left;
+  width: 100%;
+}
+.blog .navigation .alignleft {
+  float: left;
+}
+.blog .navigation .alignright {
+  float: right;
+}
+ol.commentlist {
+  list-style: none;
+  margin-left: 20px;
+  border-top: 1px solid #fff;
+}
+ol.commentlist .comment {
+  font-size: 1em;
+}
+ol.commentlist .comment .comment-body {
+  border-bottom: 1px solid #fff;
+}
+div.comment-author {
+  font-size: 1.2em;
+  margin-bottom: 3px;
+}
+.blog  .postmetadata {
+  margin-bottom: .3em;
+}
+.blog h2.blog_title {
+  font-size: 3em;
+  margin-top: .3em;
+  letter-spacing: -.03em;
+  font-weight: bold;
+  font-style: italic;
+}
+.blog h2.blog_title a {
+  color: #002d56;
+}
+
+.blog h2.blog_title a:hover {
+  color: #005826;
+}
+.blog li.browsing_indicator p{
+  font-size:1.15em;
+  line-height:1.3em;
+  margin: 0;
+}
+.blog li.browsing_indicator p span {
+  font-weight: bold;
+}
+.blog h6.post_meta {
+  color:#002D56;
+  display:block;
+  font-style:italic;
+  margin-top:-4px;
+  text-align:right;
+  border-top:1px solid #fff;
+}
+.blog h3 a {
+  text-decoration: none;
+}
+div.post {
+  margin-bottom: 10px;
+}
+form#searchform {
+  clear:both;
+  float:left;
+  width:100%;
+}
