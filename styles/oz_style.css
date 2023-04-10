@@ -578,6 +578,41 @@ body {
 }
 /*CAROUSEL STYLE ENDS*/
 
+/*INDEX HTML BODY STYLE STARTS*/
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oz_mission_container {
+  border: white 3px solid; 
+  margin: 1rem;
+  padding: 1rem;
+  width: 60%;
+}
+
+.oz_mission_container--header {
+  font-size: 5rem;
+}
+
+.oz_mission_container--p {
+  font-size: 1rem;
+}
+
+.oz_mission_image {
+  margin: 1rem;
+  padding: 1rem;
+  border: white 3px solid;
+  width: 30%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.oz_mission_image--photo {
+  opacity: .2;
+}
+/*INDEX HTML BODY STYLE ENDS*/
+
 /*FOOTER STYLE STARTS*/
 #footer {
   background-color: white;
