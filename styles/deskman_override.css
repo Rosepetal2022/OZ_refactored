@@ -2,6 +2,8 @@
 	having this here allow the stying of the backend content editor with out having to change
 	any backend code.
 */
+
+
 body.deskman {
   width: 524px;
   padding: 10px 20px;
@@ -46,7 +48,6 @@ html {
 }
 body, select, input, textarea {
   font-family: Georgia,times,serif;
-  color: #71717f;
 }
 /* ------------------------- headlines and body copy ------------
 */

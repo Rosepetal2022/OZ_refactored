@@ -17,20 +17,15 @@
   but this has an easy fix with javascript..
 */
 
+
+/*
 #container, #jax_container {
   width: 900px;
   overflow: visible;
   left:50%;
   margin-left: -470px;
 }
-#container {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  background-color: #ffff;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 20px;
-}
+
 #full_screen {
   width: 100%;
   position: absolute;
@@ -47,6 +42,8 @@
   i use an image inside of the h1 tag so that it will show up when it is printed..
   background-images don't show up when printed..
 */
+
+/*
 #header h1 {
   float: left;
   position: relative;
@@ -76,6 +73,8 @@
   * archive: i quit using lists for navigations.. i guess technicaly they are still a list of pages in which
   you can accsess.. but it's something i'm currently trying..
 */
+
+/*
 .navi {
   position: relative;
   display: block;
@@ -482,7 +481,7 @@ body.loading {
   font-size: 0.9em;
 }
 
-
+*/
 
 
 /*Start of the refactor CSS*/
@@ -492,7 +491,12 @@ body.loading {
 }
 
 body {
-  margin: 0'
+  margin: 0;
+  color: white;
+}
+
+.font {
+  color: white;
 }
 
 /*NAV STYLE STARTS*/
@@ -579,16 +583,17 @@ body {
 /*CAROUSEL STYLE ENDS*/
 
 /*INDEX HTML BODY STYLE STARTS*/
-.container {
+.container--oz {
   display: flex;
   justify-content: space-between;
+  width: 100vw;
 }
 
 .oz_mission_container {
-  border: white 3px solid; 
   margin: 1rem;
-  padding: 1rem;
-  width: 60%;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  width: 70vw;
 }
 
 .oz_mission_container--header {
@@ -603,7 +608,7 @@ body {
   margin: 1rem;
   padding: 1rem;
   border: white 3px solid;
-  width: 30%;
+  width: 30vw;
   object-fit: contain;
   object-position: center;
 }
@@ -611,6 +616,66 @@ body {
 .oz_mission_image--photo {
   opacity: .2;
 }
+
+.head_trainer--title {
+  font-size: 2rem;
+}
+
+.head_trainer--header {
+  font-size: 1rem;
+  width: 100vw;
+  text-align: center;
+}
+
+.head_trainer--container {
+  background-color: white;
+  color: black;
+  width: 100vw;
+  padding-top: 3rem;
+  display: flex;
+}
+
+.head_trainer--image {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.head_trainer--text {
+  font-size: 1.25rem;
+  padding: 2rem;
+}
+
+.candid_photo--container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.candid_photo--1 {
+  width: 20%;
+  margin: 1.25rem;
+}
+.sale_horse--container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.sale_horse--title {
+  font-size: 2rem;
+}
+
+.sale_horse--text {
+  font-size: 1.25rem;
+  align-items: center;
+}
+
+.sale_horse--p {
+  text-align: center;
+}
+
+
 /*INDEX HTML BODY STYLE ENDS*/
 
 /*FOOTER STYLE STARTS*/
@@ -641,6 +706,11 @@ body {
   font-size: 1rem;
 }
 
+.footer-div--logo {
+  text-align: center;
+  padding-top: 1rem;
+}
+
 #footer-logo {
   height: 70px;
 }
@@ -648,6 +718,7 @@ body {
 .bottom-footer {
   background-color: #244f26;
   color: #fff;
+  text-align: center;
   padding: 1.5rem;
   font-size: .75rem;
 }
