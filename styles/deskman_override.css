@@ -42,7 +42,6 @@ body.deskman div {
 
 
 html {
-  overflow: scroll;
   background: #011e39 url(../main_back_repeater.png) repeat-x scroll 0 0;
 }
 body, select, input, textarea {
@@ -93,7 +92,6 @@ body, select, input, textarea {
 }
 .deskman p {
 }
-*/
 
 /* ------------------------- lists ------------------------------
   in unorderd lists, it is easier to use background images due to the inconsitancy
@@ -268,4 +266,3 @@ body, select, input, textarea {
 	float: left;
 }
 
-*/
