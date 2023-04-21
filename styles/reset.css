@@ -3,23 +3,13 @@ body, html {
   margin: 0px;
   padding: 0px;
   background-color: transparent;
-  text-align: left;
   height: 100%;
   width: 100%;
 }
 body {
   font-size: 10px;
 }
-div {
-  margin: 0px;
-  padding: 0px;
-  float: left;
-  width: auto;
-  position: relative;
-  border: none;
-  outline: none;
-  z-index: 0;
-}
+
 
 form, fieldset {
   margin: 0px;
@@ -103,3 +93,4 @@ img {
 ul, ol {
   list-style: none;
 }
+

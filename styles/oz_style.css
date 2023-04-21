@@ -490,8 +490,11 @@ body.loading {
   box-sizing: border-box;
 }
 
-body {
+body,html {
+  width: 100%;
+  height: 100%;
   margin: 0;
+  padding: 0;
   color: white;
 }
 
@@ -675,6 +678,43 @@ body {
   text-align: center;
 }
 
+.quote {
+  text-align: center;
+  font-size: 1rem;
+  padding: 3rem;
+}
+
+.sponsors {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sponsors_container--header {
+  font-size: 3rem;
+  margin-right: 2rem;
+  background-color: white;
+  color: black;
+}
+
+.sponsors_container--text {
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+}
+
+#sponsor--logo-1 {
+  width: 10rem;
+  padding: 2rem;
+}
+
+#sponsor--logo-2 {
+  width: 20rem;
+  padding: 2rem;
+}
 
 /*INDEX HTML BODY STYLE ENDS*/
 
@@ -682,6 +722,7 @@ body {
 #footer {
   background-color: white;
   color: #002D56;
+  border-top: #244f26 solid 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -707,6 +748,7 @@ body {
 }
 
 .footer-div--logo {
+  border-top: #002D56 solid 20px;
   text-align: center;
   padding-top: 1rem;
 }

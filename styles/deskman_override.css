@@ -3,11 +3,8 @@
 	any backend code.
 */
 
-
+/*
 body.deskman {
-  width: 524px;
-  padding: 10px 20px;
-  margin: 10px 40px;
   background-image: none;
   background-color: #fff;
 }
@@ -42,6 +39,8 @@ body.deskman div {
   a fair amount of javascript where the content of the page get's dynamicaly taller,
   setting this will prevent the scoll bar form showing up and having everthing oddly shift to one side..
 */
+
+
 html {
   overflow: scroll;
   background: #011e39 url(../main_back_repeater.png) repeat-x scroll 0 0;
@@ -94,10 +93,14 @@ body, select, input, textarea {
 }
 .deskman p {
 }
+*/
+
 /* ------------------------- lists ------------------------------
   in unorderd lists, it is easier to use background images due to the inconsitancy
   across browsers of the 'list marker'
 */
+
+/*
 .deskman ul, .deskman ol {
   margin: 0 0 10px 0;
 }
@@ -130,8 +133,12 @@ body, select, input, textarea {
   font-size: 1.3em;
   font-style: italic;
 }
+*/
+
 /* ------------------------- in line elements and links ------------
 */
+
+/*
 .deskman hr {
   border-bottom: 1px solid #c2c2cc;
   border-top: 1px solid #fff;
@@ -164,6 +171,8 @@ body, select, input, textarea {
   text-decoration: none;
   color: #005826;
 }
+*/
+
 /* ------------------------- forms ----------------------------
   with using 'table-less' forms, I set the width of the labels and but break tags
   before the labels I wish to be on a new line. I have found that this is a most
@@ -172,6 +181,8 @@ body, select, input, textarea {
   form elements are in a single line, the a class of 'inline_form' is provided to put 
   on the containing element
 */
+
+/*
 .deskman fieldset, fieldset.deskman {
   padding: 5px 10px;
 }
@@ -256,3 +267,5 @@ body, select, input, textarea {
 	padding: 10px 20px 35px;
 	float: left;
 }
+
+*/
