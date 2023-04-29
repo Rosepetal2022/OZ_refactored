@@ -739,6 +739,22 @@ body,html {
 
 /*INDEX HTML BODY STYLE ENDS*/
 
+/*THE_FARM BODY STYLE STARTS*/
+.farm--top-image {
+  background-image: cover;
+  width: 100vw;
+  height: auto;
+}
+.farm--header {
+  font-size: 5rem;
+}
+
+.farm--second-header {
+  font-size: 3rem;
+}
+
+/*THE_FARM BODY STYLE ENDS*/
+
 /*FOOTER STYLE STARTS*/
 #footer {
   background-color: white;
