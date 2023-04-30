@@ -783,6 +783,56 @@ body,html {
 }
 /*THE_FARM BODY STYLE ENDS*/
 
+/*OUR_TEAM STYLE STARTS*/
+.our_team--header {
+  font-size: 5rem;
+}
+
+.our_team--header-text {
+  font-size: 1rem;
+}
+
+.our_team--shelley-title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem;
+  padding-top: 2rem;
+}
+
+.our_team--shelley-text {
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.our_team--shelley-photo {
+  padding: 2rem;
+  width: 40vw;
+  height: auto;
+}
+
+.our_team--staff-container {
+  background-color: white;
+  
+}
+
+.our_team--staff-photo {
+  width: 20vw;
+  height: auto;
+  justify-content: center;
+}
+
+.our_team--staff-title {
+  color: #002D56;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.our_team--staff-text {
+  color: #002D56;
+  font-size: 1rem;
+  text-align: center
+}
+/*OUR_TEAM STYLE ENDS*/
 /*FOOTER STYLE STARTS*/
 #footer {
   background-color: white;
