@@ -753,6 +753,34 @@ body,html {
   font-size: 3rem;
 }
 
+.farm--image {
+  width: 40vw;
+  height: auto;
+  padding: 2rem;
+}
+
+.farm--text {
+  padding: 2rem;
+  font-size: 1.25rem;
+}
+
+.coursel_container {
+  border-top: #002D56 8px solid;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+}
+
+.tour--container {
+  background-color: white;
+  color: #002D56;
+  padding: 3rem;
+}
+.tour--title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+}
 /*THE_FARM BODY STYLE ENDS*/
 
 /*FOOTER STYLE STARTS*/
