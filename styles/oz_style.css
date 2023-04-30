@@ -833,6 +833,43 @@ body,html {
   text-align: center
 }
 /*OUR_TEAM STYLE ENDS*/
+
+/*HORSE_CARE STYLE STARTS*/
+.horse_care--top-image {
+  width: 100vw;
+  height: auto;
+}
+
+.horse_care--header {
+  font-size: 5rem;
+}
+
+.horse_care--title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.care_photo {
+  width: 30vw;
+  padding: 2rem;
+}
+
+.care--text {
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.care--transport-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.care--transport-text {
+  font-size: 1rem;
+  padding: 1rem;
+}
+/*HORSE_CARE STYLE ENDS*/
 /*FOOTER STYLE STARTS*/
 #footer {
   background-color: white;

@@ -40,12 +40,6 @@
 </head>
 
 <body>
-  <!-- full screen content -->
-  <div id="full_screen"></div>
-  <!-- ajaxed content -->
-  <div id="jax_container"></div>
-  <!-- START: overall container -->
-  <div id="container">
     <!-- START: header content -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="oz_logo_nav" href="index.html" title="Oz Incorporated">
@@ -83,15 +77,14 @@
     </nav>
     <!-- END: header content -->
     <!-- START: content -->
-    <div id="content" class="horse_care">
-      <!-- START: gallery -->
-      <div class="gallery">
-        <img src="images/horse_care/top_picture.jpg" alt="" />
-      </div>
-      <!-- END: gallery -->
-      <div class="content">
-        <div class="column left deskman">
-          <h2> Horse Care </h2>
+
+    <div>
+      <img class="horse_care--top-image" src="images/care/horse_care.jpg" alt="" />
+    </div>
+
+    <h2 class="horse_care--header"> Horse Care. </h2>
+      <div class="d-flex">
+        <div class="care--text">
           <p>
             <strong> Oz Incorporated </strong> takes horse care seriously. Fitness and conditioning are first and
             foremost in importance to maintain healthy, sound equine athletes. The Oz team handles every aspect of the
@@ -100,18 +93,28 @@
             grass paddocks; and coordination with blacksmiths and veterinarians, equine dentists, and any other special
             care needed for maximum performance. The horse stalls are bedded in shavings and are cleaned daily.
           </p>
-        </div>
-        <div class="column right deskman">
-          <img src="images/horse_care/horse_care.jpg" alt="" />
-          <p>
-            <strong> Horse Care Transport </strong> - Oz Incorporated owns and operates a tractor trailer for shipping
+
+          <h2 class="care--transport-title"> Horse Care Transport </h2>
+          <p class="care--transport-text">
+            Oz Incorporated owns and operates a tractor trailer for shipping
             the horses to the events. Experienced shippers always have horses arrive in top competing form.
           </p>
         </div>
+
+        <div class="">
+          <img class="care_photo" src="images/care/Clover photo.jpeg" alt="" />
+         
+        </div>
+
+
       </div>
-      <div class="content main">
-        <div class="column left deskman">
-          <h3> Full Board and Training Includes </h3>
+
+     
+
+      <h3 class="horse_care--title"> Full Board and Training Includes </h3>
+      <div class="d-flex">
+        <div class="">
+          
           <ul>
             <li> Professional Rides and lessons </li>
             <li> Turn out with appropriate protective equipment </li>
@@ -125,13 +128,15 @@
             <li> Ordering specialized equipment </li>
           </ul>
         </div>
-        <div class="column right">
+        <div class="">
           <img src="images/horse_care/full_board_and_training.jpg" alt="" />
         </div>
       </div>
-      <div class="content main deskman">
-        <h2> Training Schedule </h2>
-        <div class="column left">
+
+      <h2 class="horse_care--title"> Training Schedule </h2>
+      <div class="d-flex">
+       
+        <div class="">
           <p>
             At Oz you and your horse will receive classical training of the American Hunter Jumper System. We offer
             lessons from beginner to advanced riders in a fun, goal driven atmosphere. Oz Incorporated is open Tuesday
@@ -143,7 +148,7 @@
             Each program is tailor made to suit each horse &amp; client situation.
           </p>
         </div>
-        <div class="column right">
+        <div class="">
           <img src="images/horse_care/training_schedule.jpg" alt="" />
           <dl>
             <dt> Tuesday </dt>
@@ -155,6 +160,8 @@
             <dd>
           </dl>
         </div>
+      </div>
+
       </div>
       <!-- END: content -->
       <!-- START: footer -->
