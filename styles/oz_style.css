@@ -486,7 +486,7 @@ body.loading {
 
 /*Start of the refactor CSS*/
 
-*, *::before, *::after {
+*, *::before, *::after{
   box-sizing: border-box;
 }
 
@@ -591,7 +591,7 @@ body,html {
 .container--oz {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: auto;
 }
 
 .oz_mission_container {
@@ -926,17 +926,27 @@ body,html {
     justify-content: center;
     position: relative;
   } */
+  * {
+    overflow: auto;
+  }
+  body {
+    padding: auto;
+  }
   .container--oz {
     flex-direction: column;
     justify-content: center;
+    padding: 5px;
   }
   .oz_mission_container--header {
     justify-content: center;
-    padding: 0;
     text-align: center;
   }
   .oz_mission_container {
+    /* display: flex;
+    flex-direction: column; */
     justify-content: center;
     text-align: center;
+    width: 100%;
   }
+  
 }
