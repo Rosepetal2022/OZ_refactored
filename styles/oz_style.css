@@ -948,5 +948,21 @@ body,html {
     text-align: center;
     width: 100%;
   }
-  
+  .oz_blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .head_trainer--container {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .head_trainer--image {
+    padding-top: 80px;
+    width: 50%;
+  }
+  .head_trainer--text {
+    width: 50%;
+  }
 }
