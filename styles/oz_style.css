@@ -918,3 +918,25 @@ body,html {
 }
 
 /*FOOTER STYLE ENDS*/
+
+/*MEDIA QUERIES FOR SMALLER DESKTOPS AND SREENS*/
+@media screen and (max-width: 980px) {
+  /* #main-nav {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  } */
+  .container--oz {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .oz_mission_container--header {
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+  }
+  .oz_mission_container {
+    justify-content: center;
+    text-align: center;
+  }
+}
