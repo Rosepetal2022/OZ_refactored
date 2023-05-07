@@ -16,30 +16,24 @@
   <link href="styles/reset.css" rel="Stylesheet" type="text/css" media="all" />
 
   <!--[if !(lt IE 7)]><!-->
-  <link href="styles/form.css" rel="Stylesheet" type="text/css" />
+ <link href="styles/form.css" rel="Stylesheet" type="text/css" />
   <!--<![endif]-->
 
   <link href="styles/deskman_override.css" rel="Stylesheet" type="text/css" media="all" />
-  <link href="styles/oz_style.css" rel="Stylesheet" type="text/css" media="all" />
+  
 
   <link href="styles/print.css" rel="Stylesheet" type="text/css" media="print" />
 
-  <script src="scripts/jquery-1.3.2.min.js" type="text/javascript"></script>
-  <script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
-  <script src="scripts/swfobject.js" type="text/javascript"></script>
-  <script src="scripts/jquery.media.js" type="text/javascript"></script>
-  <script src="scripts/layout_fixers.js" type="text/javascript"></script>
-  <script src="scripts/utility.js" type="text/javascript"></script>
-  <script src="scripts/runes.js" type="text/javascript"></script>
-  <script src="scripts/control.js" type="text/javascript"></script>
-  <script src="scripts/oz_script.js" type="text/javascript"></script>
+  <link href="styles/oz_style.css" rel="Stylesheet" type="text/css" media="all" />
 
-  <script src="scripts/oz_intro.js" type="text/javascript"></script>
+
+  
 
 </head>
 
 <body>
   <!--Start of Navigation-->
+  <div class="main_div">
   <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="oz_logo_nav" href="index.html" title="Oz Incorporated">
       <img src="images/logo.png" alt="Oz Incorporated Logo" />
@@ -83,13 +77,13 @@
       <button class="carousel-button next" data-carousel-button="next" type="button">&#8658;</button>
       <ul data-slides>
         <li class="slide" data-active>
-          <img src="images/carousel/1.jpg" alt="" />
+          <img id="carousel_img" src="images/carousel/1.jpg" alt="" />
         </li>
         <li class="slide">
-          <img src="images/carousel/2.jpg" alt="" />
+          <img id="carousel_img" src="images/carousel/2.jpg" alt="" />
         </li>
         <li class="slide">
-          <img src="images/carousel/3.jpg" alt="" />
+          <img id="carousel_img" src="images/carousel/3.jpg" alt="" />
         </li>
       </ul>
     </div>
@@ -114,7 +108,7 @@
     <div class="oz_mission_image">
       <div class="oz_blog">
       <h3 class="oz_blog--header"> Oz Inc. Blog </h3>
-      <img class="oz_blog--photo" src="images/blog.jpg" alt="" />
+      <!--<img class="oz_blog--photo" src="images/blog.jpg" alt="" />-->
       <p class="oz_blog--text">
         Keep up with the daily grind of Ozlings, industry news and show results. It’s the place to go to stay
         current and informed in the show jumping world. Join the conversation!
@@ -239,6 +233,7 @@
     </div>
   </div>
   <!--End Footer-->
+</div>
 
 </body>
 
@@ -249,5 +244,16 @@
     src="http://visit.webhosting.yahoo.com/visit.gif?us1329752159" alt="setstats" border="0" width="1"
     height="1"></noscript>
 <script src="scripts/carousel.js"></script>
+<script src="scripts/jquery-1.3.2.min.js" type="text/javascript"></script>
+  <script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+  <script src="scripts/swfobject.js" type="text/javascript"></script>
+  <script src="scripts/jquery.media.js" type="text/javascript"></script>
+  <script src="scripts/layout_fixers.js" type="text/javascript"></script>
+  <script src="scripts/utility.js" type="text/javascript"></script>
+  <script src="scripts/runes.js" type="text/javascript"></script>
+  <script src="scripts/control.js" type="text/javascript"></script>
+  <script src="scripts/oz_script.js" type="text/javascript"></script>
+
+  <script src="scripts/oz_intro.js" type="text/javascript"></script>
 
 </html>

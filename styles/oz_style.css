@@ -486,17 +486,22 @@ body.loading {
 
 /*Start of the refactor CSS*/
 
-*, *::before, *::after {
+* { 
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body,html {
   width: 100%;
   height: 100%;
-  margin: 0%;
-  padding: 0%;
-  overflow-x: hidden;
+  display: inline-block;
   color: white;
+}
+
+.main_div {
+  margin: 0;
+  padding: 0;
 }
 
 .font {
@@ -522,7 +527,7 @@ body,html {
 /*CAROUSEL STYLE STARTS*/
 .carousel {
   border-top: #002D56 8px solid;
-  width: 100vw;
+  width: 100%;
   height: 70vh;
   position: relative;
 }
@@ -531,6 +536,10 @@ body,html {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+#carousel_img {
+  object-fit: cover;
 }
 
 .slide {
@@ -564,7 +573,6 @@ body,html {
   cursor: pointer;
   border-radius: .25rem;
   padding: 0 .5rem;
-  margin-right: 2rem;
   background-color: rgba(0,0,0,.1);
 }
 
@@ -591,14 +599,14 @@ body,html {
 .container--oz {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
 }
 
 .oz_mission_container {
   margin: 1rem;
   padding-top: 1rem;
   padding-bottom: 3rem;
-  width: 70vw;
+  width: 70%;
 }
 
 .oz_mission_container--header {
@@ -654,7 +662,7 @@ body,html {
 .head_trainer--container {
   background-color: white;
   color: black;
-  width: 100vw;
+  width: 100%;
   padding-top: 3rem;
   display: flex;
 }
@@ -679,7 +687,7 @@ body,html {
   margin: 1.25rem;
 }
 .sale_horse--container {
-  width: 100vw;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -742,7 +750,7 @@ body,html {
 /*THE_FARM BODY STYLE STARTS*/
 .farm--top-image {
   background-image: cover;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 .farm--header {
@@ -754,7 +762,7 @@ body,html {
 }
 
 .farm--image {
-  width: 40vw;
+  width: 100%;
   height: auto;
   padding: 2rem;
 }
@@ -766,9 +774,8 @@ body,html {
 
 .coursel_container {
   border-top: #002D56 8px solid;
-  width: 100vw;
-  height: 70vh;
-  position: relative;
+  width: 100%;
+  height: 70%;
 }
 
 .tour--container {
@@ -812,13 +819,23 @@ body,html {
 
 .our_team--staff-container {
   background-color: white;
-  
+}
+
+.our_team--staff-card {
+  position: relative;
+  width: 40vw;
+  background-color: grey;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 2rem;
 }
 
 .our_team--staff-photo {
+  position: relative;
+  align-self: center;
+  margin: -3rem auto 3.5rem;
   width: 20vw;
   height: auto;
-  justify-content: center;
 }
 
 .our_team--staff-title {
@@ -836,7 +853,7 @@ body,html {
 
 /*HORSE_CARE STYLE STARTS*/
 .horse_care--top-image {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -850,7 +867,7 @@ body,html {
 }
 
 .care_photo {
-  width: 30vw;
+  width: 90%;
   padding: 2rem;
 }
 
@@ -868,6 +885,36 @@ body,html {
 .care--transport-text {
   font-size: 1rem;
   padding: 1rem;
+}
+
+.horse_care--list {
+  width: 80%;
+}
+
+.horse_care--text {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.horse_care--leo {
+  width: 100%;
+  padding: 2rem;
+}
+
+.horse_care--li {
+  padding: 1rem;
+}
+
+.horse_care--training {
+  padding: 4rem;
+}
+
+.horse_care--training-description {
+  padding: 4rem;
+}
+
+.horse_care--training-list {
+  padding: 2rem;
 }
 /*HORSE_CARE STYLE ENDS*/
 /*FOOTER STYLE STARTS*/
