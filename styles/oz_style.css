@@ -522,8 +522,8 @@ body,html {
 /*CAROUSEL STYLE STARTS*/
 .carousel {
   border-top: #002D56 8px solid;
-  width: 100vw;
-  height: 70vh;
+  width: 100%;
+  height: 70%;
   position: relative;
 }
 
@@ -598,7 +598,7 @@ body,html {
   margin: 1rem;
   padding-top: 1rem;
   padding-bottom: 3rem;
-  width: 70vw;
+  width: 70%;
 }
 
 .oz_mission_container--header {
@@ -614,7 +614,7 @@ body,html {
   padding: 1rem;
   background-color: white;
   color: black;
-  width: 30vw;
+  width: 30%;
   object-fit: contain;
   object-position: center;
 }
@@ -647,14 +647,14 @@ body,html {
 
 .head_trainer--header {
   font-size: 1rem;
-  width: 100vw;
+  width: 100%;
   text-align: center;
 }
 
 .head_trainer--container {
   background-color: white;
   color: black;
-  width: 100vw;
+  width: 100%;
   padding-top: 3rem;
   display: flex;
 }
@@ -679,7 +679,7 @@ body,html {
   margin: 1.25rem;
 }
 .sale_horse--container {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -742,7 +742,7 @@ body,html {
 /*THE_FARM BODY STYLE STARTS*/
 .farm--top-image {
   background-image: cover;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 .farm--header {
@@ -754,7 +754,7 @@ body,html {
 }
 
 .farm--image {
-  width: 40vw;
+  width: 40%;
   height: auto;
   padding: 2rem;
 }
@@ -766,8 +766,8 @@ body,html {
 
 .coursel_container {
   border-top: #002D56 8px solid;
-  width: 100vw;
-  height: 70vh;
+  width: 100%;
+  height: 70%;
   position: relative;
 }
 
@@ -806,7 +806,7 @@ body,html {
 
 .our_team--shelley-photo {
   padding: 2rem;
-  width: 40vw;
+  width: 40%;
   height: auto;
 }
 
@@ -816,7 +816,7 @@ body,html {
 }
 
 .our_team--staff-photo {
-  width: 20vw;
+  width: 20%;
   height: auto;
   justify-content: center;
 }
@@ -836,7 +836,7 @@ body,html {
 
 /*HORSE_CARE STYLE STARTS*/
 .horse_care--top-image {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -850,7 +850,7 @@ body,html {
 }
 
 .care_photo {
-  width: 30vw;
+  width: 30%;
   padding: 2rem;
 }
 
