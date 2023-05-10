@@ -486,7 +486,7 @@ body.loading {
 
 /*Start of the refactor CSS*/
 
-*, *::before, *::after{
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -522,8 +522,8 @@ body,html {
 /*CAROUSEL STYLE STARTS*/
 .carousel {
   border-top: #002D56 8px solid;
-  width: 100%;
-  height: 70%;
+  width: 100vw;
+  height: 70vh;
   position: relative;
 }
 
@@ -539,7 +539,6 @@ body,html {
   opacity: 0;
   transition: 400ms opacity ease-in-out;
 }
-
 .slide > img {
   display: block;
   width: 100%;
@@ -547,7 +546,6 @@ body,html {
   object-fit: cover;
   object-position: center;
 }
-
 .slide[data-active] {
   opacity: 1;
 }
@@ -591,7 +589,7 @@ body,html {
 .container--oz {
   display: flex;
   justify-content: space-between;
-  width: auto;
+  width: 100%;
 }
 
 .oz_mission_container {
@@ -926,9 +924,7 @@ body,html {
     justify-content: center;
     position: relative;
   } */
-  * {
-    overflow: auto;
-  }
+
   body {
     padding: auto;
   }
