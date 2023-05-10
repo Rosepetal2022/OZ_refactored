@@ -947,7 +947,9 @@ body,html {
   .oz_blog {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  }
+  .oz_blog--photo {
+    width: 98%;
   }
   .head_trainer--container {
     justify-content: space-evenly;
@@ -960,5 +962,12 @@ body,html {
   }
   .head_trainer--text {
     width: 50%;
+  }
+  .sponsors {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sponsors_container--header {
+    justify-content: center;
   }
 }
