@@ -965,9 +965,32 @@ body,html {
   }
   .sponsors {
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
   }
   .sponsors_container--header {
+    justify-content: space-around;
+    width: 100%;
+  }
+  .sponsors_container--text {
+    justify-content: space-around;
+    width: 100%;
+  }
+ 
+}
+@media screen and (max-width: 575px) {
+  .head_trainer--container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .head_trainer--text {
+    justify-content: center;
+    width: 100%;
+  }
+  .footer-div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-content {
     justify-content: center;
   }
 }
