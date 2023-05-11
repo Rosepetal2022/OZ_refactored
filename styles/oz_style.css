@@ -977,6 +977,10 @@ body,html {
   }
  
 }
+@media screen and (max-width: 768px) {
+
+}
+
 @media screen and (max-width: 575px) {
   .head_trainer--container {
     flex-direction: column;
