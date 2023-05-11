@@ -486,17 +486,22 @@ body.loading {
 
 /*Start of the refactor CSS*/
 
-*, *::before, *::after {
+* { 
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body,html {
   width: 100%;
   height: 100%;
-  margin: 0%;
-  padding: 0%;
-  overflow-x: hidden;
+  display: inline-block;
   color: white;
+}
+
+.main_div {
+  margin: 0;
+  padding: 0;
 }
 
 .font {
@@ -522,7 +527,7 @@ body,html {
 /*CAROUSEL STYLE STARTS*/
 .carousel {
   border-top: #002D56 8px solid;
-  width: 100vw;
+  width: 100%;
   height: 70vh;
   position: relative;
 }
@@ -531,6 +536,10 @@ body,html {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+#carousel_img {
+  object-fit: cover;
 }
 
 .slide {
@@ -562,7 +571,6 @@ body,html {
   cursor: pointer;
   border-radius: .25rem;
   padding: 0 .5rem;
-  margin-right: 2rem;
   background-color: rgba(0,0,0,.1);
 }
 
@@ -751,7 +759,7 @@ body,html {
   font-size: 3rem;
 }
 
-.farm--image {
+.farm--image{
   width: 40%;
   height: auto;
   padding: 2rem;
@@ -810,13 +818,23 @@ body,html {
 
 .our_team--staff-container {
   background-color: white;
-  
+}
+
+.our_team--staff-card {
+  position: relative;
+  width: 40vw;
+  background-color: grey;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 2rem;
 }
 
 .our_team--staff-photo {
   width: 20%;
+  position: relative;
+  align-self: center;
+  margin: -3rem auto 3.5rem;
   height: auto;
-  justify-content: center;
 }
 
 .our_team--staff-title {
@@ -866,6 +884,51 @@ body,html {
 .care--transport-text {
   font-size: 1rem;
   padding: 1rem;
+}
+
+.horse_care--list {
+  width: 80%;
+}
+
+.horse_care--text {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.horse_care--training-container {
+  background-color: white;
+  color:#002D56;
+  font-size: 1.25rem;
+  padding: 5rem;
+}
+
+.horse_care--leo-div {
+  display: flex;
+  justify-content: center;
+ 
+
+}
+.horse_care--leo {
+  width: 40%;
+  border: #002D56 3px solid;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.horse_care--li {
+  padding: 0.5rem 5rem 0.5rem 5rem;
+}
+
+.horse_care--training {
+  padding: 4rem;
+}
+
+.horse_care--training-description {
+  padding: 4rem;
+}
+
+.horse_care--training-list {
+  padding: 2rem;
 }
 /*HORSE_CARE STYLE ENDS*/
 /*FOOTER STYLE STARTS*/
@@ -997,4 +1060,41 @@ body,html {
   .footer-content {
     justify-content: center;
   }
+  
+  
+.divider {								/* minor cosmetics */
+  display: table; 
+  font-size: 32px; 
+  text-align: center; 
+  width: 75%; 						/* divider width */
+  margin: 2rem auto 1rem auto;					/* spacing above/below */
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+  width: 50%;
+  top: 13px;							/* adjust vertical align */
+  -moz-background-size: 100% 2px; 	/* line width */
+  background-size: 100% 2px; 			/* line width */
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
+  background-image: -webkit-linear-gradient(180deg, transparent, #000);
+  background-image: -moz-linear-gradient(180deg, transparent, #000);
+  background-image: -o-linear-gradient(180deg, transparent, #000);
+  background-image: linear-gradient(90deg, transparent, #000);
+}
+.divider span:nth-child(2) {
+  color: #002D56; 
+  padding: 0px 5px; 
+  width: auto; 
+  white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+  background-image: -webkit-linear-gradient(180deg, #000, transparent);
+  background-image: -moz-linear-gradient(180deg, #000, transparent);
+  background-image: -o-linear-gradient(180deg, #000, transparent);
+  background-image: linear-gradient(90deg, #000, transparent);
 }
