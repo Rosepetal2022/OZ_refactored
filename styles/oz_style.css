@@ -495,7 +495,6 @@ body.loading {
 body,html {
   width: 100%;
   height: 100%;
-  display: inline-block;
   color: white;
 }
 
@@ -931,6 +930,40 @@ body,html {
   padding: 2rem;
 }
 /*HORSE_CARE STYLE ENDS*/
+
+/*PORTFOLIO DESIGN STARTS*/
+.portfolio--title {
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.portfolio--opening-text {
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.portfolio_container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.portfolio_picture {
+  width: 30rem;
+  border: 3px solid white;
+  margin: 2rem 2rem 0rem 2rem; ;
+}
+.portfolio_name {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+
+/*PORTFOLIO DESIGN ENDS*/
+
+
 /*FOOTER STYLE STARTS*/
 #footer {
   background-color: white;
@@ -944,11 +977,13 @@ body,html {
 .footer-div {
   display: flex;
   justify-content: space-evenly;
+  align-items:center;
   margin-bottom: 0px;
 }
 
 .footer-content {
   margin: 50px;
+  text-align: center;
 }
 
 .footer-content-title {
@@ -956,8 +991,19 @@ body,html {
   margin-bottom: 10px;
 }
 
+.footer-logo {
+  width: 4rem;
+  align-self: center;
+  height: auto;
+}
 .footer-content-title--address {
   font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.footer-content--name {
+  padding: .5rem;
 }
 
 .footer-div--logo {
@@ -967,7 +1013,8 @@ body,html {
 }
 
 #footer-logo {
-  height: 70px;
+  height: 7rem;
+  margin: 2rem;
 }
 
 .bottom-footer {
@@ -981,7 +1028,7 @@ body,html {
 /*FOOTER STYLE ENDS*/
 
 /*MEDIA QUERIES FOR SMALLER DESKTOPS AND SREENS*/
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 990px) {
   /* #main-nav {
     padding-bottom: 0;
     justify-content: center;
@@ -1038,13 +1085,39 @@ body,html {
     justify-content: space-around;
     width: 100%;
   }
+
+  .portfolio_container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .portfolio_div {
+    margin: 2rem;
+  }
+
+  .portfolio_picture {
+    width: 30rem;
+  }
  
 }
 @media screen and (max-width: 768px) {
+  
+  .portfolio_picture {
+    width: 25rem;
+    margin-left: auto;
+  }
 
+
+  .footer-div {
+    flex-direction: column;
+    width: 100%;
+  }
+  
 }
 
 @media screen and (max-width: 575px) {
+  
   .head_trainer--container {
     flex-direction: column;
     width: 100%;
@@ -1053,14 +1126,33 @@ body,html {
     justify-content: center;
     width: 100%;
   }
+
+
+  /*MEDIA QUERIES FOR PORTFOLIO*/
+  .portfolio_picture {
+    width: 20rem;
+    margin: auto;
+  }
+  
   .footer-div {
     flex-direction: column;
     width: 100%;
+    text-align: center;
   }
+
   .footer-content {
     justify-content: center;
+
   }
-  
+
+}  
+
+@media screen and (max-width: 300px) {
+  .portfolio_picture {
+    width: 15rem;
+    margin-left: auto;
+  }
+}
   
 .divider {								/* minor cosmetics */
   display: table; 
