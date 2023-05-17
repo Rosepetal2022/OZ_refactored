@@ -601,6 +601,7 @@ html {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .oz_mission_container {
@@ -612,6 +613,7 @@ html {
 
 .oz_mission_container--header {
   font-size: 5rem;
+  margin-bottom: 2rem;
 }
 
 .oz_mission_container--p {
@@ -634,24 +636,37 @@ html {
 
 .oz_blog {
   font-size: 1.5rem;
-  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+#oz_blog--photo {
+  width: 10rem;
+  margin: 1rem;
 }
 
 .oz_blog--header {
   text-align: center;
+  margin: 1rem;
 }
 
 #oz_blog--button {
   text-align: center;
+  margin: 2rem;
 }
 
 .oz_blog--text {
   font-size: .75rem;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .head_trainer--title {
   font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
 }
 
 .head_trainer--header {
@@ -665,11 +680,9 @@ html {
   color: black;
   width: 100%;
   padding-top: 3rem;
-  display: flex;
 }
 
-.head_trainer--image {
-  text-align: center;
+.dawson {
   padding: 1.5rem;
 }
 
@@ -678,6 +691,10 @@ html {
   padding: 2rem;
 }
 
+.head_trainer--button {
+  margin: 2rem;
+  text-align:center;
+}
 .candid_photo--container {
   display: flex;
   justify-content: space-evenly;
@@ -698,6 +715,7 @@ html {
 
 .sale_horse--title {
   font-size: 2rem;
+  margin: 2rem;
 }
 
 .sale_horse--text {
@@ -707,6 +725,10 @@ html {
 
 .sale_horse--p {
   text-align: center;
+}
+
+.sale_horse--button {
+  margin: 1.5rem;
 }
 
 .quote {
@@ -821,8 +843,7 @@ html {
 .our_team--shelley-title {
   text-align: center;
   font-size: 3rem;
-  margin: 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .our_team--shelley-text {
@@ -904,23 +925,25 @@ html {
 }
 
 .care--main {
-  padding: 3rem 4rem 4rem 4rem;
+  padding: 0rem;
   border-bottom: 20px solid #244f26;
 }
 
 .care_photo {
   width: 25rem;
+  padding: 2rem;
 }
 
 .care--text {
   font-size: 1rem;
+  width: 60%;
   padding: 2rem;
 }
 
 .care--transport-title {
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding-top: 3.5rem;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 4rem;
 }
 
 .care--transport-text {
@@ -954,17 +977,15 @@ html {
 .horse_care--leo-div {
   display: flex;
   justify-content: center;
-
-
 }
 
 .horse_care--leo {
-  width: 40%;
+  width: 40rem;
   margin-bottom: 2rem;
 }
 
 .horse_care--li {
-  padding: 0.5rem 5rem 0.5rem 5rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
 .horse_care--logo-div {
@@ -978,17 +999,16 @@ html {
 }
 
 .horse_care--training {
-  padding: 4rem;
+  padding: 3rem;
+}
+
+.horse_care--training-photo {
+  width: 20rem;
 }
 
 .horse_care--training-title {
   font-size: 2rem;
   padding: 1rem;
-}
-
-
-.horse_care--training-description {
-  padding: 4rem;
 }
 
 .horse_care--training-list {
@@ -1138,6 +1158,7 @@ html {
 
   .container--oz {
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 5px;
   }
@@ -1148,11 +1169,8 @@ html {
   }
 
   .oz_mission_container {
-    /* display: flex;
-    flex-direction: column; */
-    justify-content: center;
     text-align: center;
-    width: 100%;
+    width: 40rem;
   }
 
   .oz_blog {
@@ -1160,16 +1178,18 @@ html {
     flex-direction: column;
   }
 
-  .oz_blog--photo {
-    width: 98%;
-  }
+ #oz_blog--photo {
+  width: 10rem;
+ }
 
   .head_trainer--container {
     justify-content: space-evenly;
     display: flex;
-    flex-direction: row-reverse;
   }
 
+  .head_trainer--button {
+    text-align: center;
+  }
   .head_trainer--image {
     padding-top: 80px;
     width: 50%;
@@ -1225,28 +1245,96 @@ html {
     flex-direction: column-reverse;
   }
 
+  .care--main {
+    flex-direction: column-reverse;
+    text-align: center;
+
+  }
+
+  .care_photo {
+    width: 40rem;
+  }
+
+  .horse_care--main-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .divider_white {
+    width: 30rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .oz_mission_container {
+    width: 30rem;
+  }
+
+  .dawson {
+    width: 30rem;
+  }  
+
+  .head_trainer--container {
+    flex-direction: column;
+  }
 
   .portfolio_picture {
     width: 25rem;
     margin-left: auto;
   }
 
+  .head_trainer--text {
+    width: 30rem;
+  }
+
+  .head_trainer--title {
+    text-align: center;
+  }
+
+  #sponsor--logo-2 {
+    width: 15rem;
+  }
+
+  .candid_photo--1 {
+    width: 20rem;
+  }
+
+  .candid_photo--container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+ 
+
+  .horse_care--leo {
+    width: 20rem;
+  }
+
+  .care_photo {
+    width: 25rem;
+  }
 
   .footer-div {
     flex-direction: column;
     width: 100%;
   }
-
-  .divider_white {
-    width: 20rem;
-  }
-
 }
 
 @media screen and (max-width: 575px) {
+
+  .oz_mission_container {
+    width: 18rem;
+    margin: 0rem;
+  }
+
+  .oz_mission_container--header {
+    font-size: 3rem;
+  }
+
+  #oz_blog--photo {
+    width: 10rem;
+  }
 
   .head_trainer--container {
     flex-direction: column;
@@ -1256,6 +1344,18 @@ html {
   .head_trainer--text {
     justify-content: center;
     width: 100%;
+  }
+
+  .dawson {
+    width: 20rem;
+  }
+
+  .candid_photo--1 {
+    width: 15rem;
+  }
+
+  .sponsors_container--header {
+    width: 10rem;
   }
 
   .our_team--shelley-photo {
@@ -1284,6 +1384,29 @@ html {
     width: 20rem;
   }
 
+  .horse_care--training-description {
+    width: 15rem;
+  }
+
+  .horse_care--text {
+    flex-direction: column;
+  }
+
+  .care_photo {
+    width:20rem;
+  }
+
+  .horse_care--leo {
+    width: 15rem;
+  }
+
+  .horse_care--training-photo {
+    width: 15rem;
+  }
+
+  .divider_white {
+    width: 15rem;
+  }
   /*MEDIA QUERIES FOR PORTFOLIO*/
   .portfolio_picture {
     width: 20rem;
@@ -1306,6 +1429,33 @@ html {
 }
 
 @media screen and (max-width: 300px) {
+ .oz_mission_container {
+  width: 15rem;
+ }
+
+ .oz_mission_container--header {
+  width: 15rem;
+ }
+ 
+  .dawson {
+    width: 15rem;
+  }
+
+  .oz_blog {
+    width: 10rem;
+  }
+
+  #oz_blog--photo {
+    width: 10rem;
+  }
+
+  .candid_photo--1 {
+    width: 15rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+  }
+
   .portfolio_picture {
     width: 15rem;
     margin-left: auto;
@@ -1330,7 +1480,23 @@ html {
     width: 15rem;
   }
 
+  .care_photo {
+    width:15rem;
+  }
+
+  .horse_care--leo {
+    width: 15rem;
+  }
+
+  .horse_care--training-photo {
+    width: 10rem;
+  }
+
   .divider_white {
     width: 15rem;
+  }
+
+  #footer-logo {
+    width: 10rem;
   }
 }
