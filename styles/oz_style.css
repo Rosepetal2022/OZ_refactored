@@ -1129,8 +1129,12 @@ html {
   background-color: #244f26;
   color: #fff;
   text-align: center;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
   font-size: .75rem;
+}
+
+.rosepetallogo {
+  width: 15rem;
 }
 
 /*FOOTER STYLE ENDS*/
@@ -1160,6 +1164,7 @@ html {
   text-align:center;
   margin-bottom: 3rem;
 }
+
 
 
 .hidden {
