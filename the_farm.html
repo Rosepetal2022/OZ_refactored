@@ -43,7 +43,7 @@
 
 <body>
   <!--START Navigation-->
-  <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="main_nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <a class="oz_logo_nav" href="index.html" title="Oz Incorporated">
       <img src="images/logo.png" alt="Oz Incorporated Logo" />
     </a>
@@ -82,13 +82,13 @@
 
   <!-- START Main Content-->
   <div class="farm--container">
-    <h2 class="farm--header"> The Farm. </h2>
+    <h2 class="farm--header hidden"> The Farm. </h2>
 
     <div class="d-flex farm--div align-items-center">
       <div>
         <img class="farm--image" src="images/farm/indoor.jpg" alt="" />
       </div>
-      <p class="farm--text">
+      <p class="farm--text hidden">
         <strong> Oz Incorporated </strong> is situated on 45 acres just north of Canby, Oregon. It is thirty minutes
         from downtown Portland and is easily accessed via I-5 and I-205. Oz has been built from the ground up and is
         specifically designed to serve the exact demands of our clientele. This premiere facility has a 90' x 200',
@@ -98,7 +98,7 @@
     </div>
 
     <div class="d-flex farm--div-mid align-items-center">
-      <p class="farm--text">
+      <p class="farm--text hidden">
         Each of the 45 stalls is 12' x 12' with tamped dirt floors and rubber mats and has the availability of
         watering the horse with automatic water or by buckets. Five grooming stalls and two wash racks with heated
         water make for easy grooming. Twelve large grassed paddocks are a wonderful space for safe turn out and a
@@ -114,7 +114,7 @@
       <div>
         <img class="farm--image" src="images/farm/clubroom.jpg" alt="" />
       </div>
-      <p class="farm--text">
+      <p class="farm--text hidden">
         The Clubroom, with its panoramic views and deck, is a perfect place for parents and friends to watch, listen
         to the lessons via the sound system, or wait in the heated or air-conditioned space. It is equipped with a
         full kitchen, cable tv and high speed wireless internet, making it easy to work or study and ride.
@@ -125,8 +125,8 @@
   <!--Start of Carousel-->
   <div class="tour--container">
       
-    <h1 class="tour--title">Take A Virtual Tour</h1>
-    <div class="oz_logo--div"><img class="oz_logo" src="images/icons/oz_logo.png" alt="oz-logo" /></div>
+    <h1 class="tour--title hidden">Take A Virtual Tour</h1>
+    <div class="oz_logo--div hidden"><img class="oz_logo" src="images/icons/oz_logo.png" alt="oz-logo" /></div>
     <section class="carousel_container" aria-label="newest photos">
       <div class="carousel" data-carousel>
         <button class="carousel-button prev" data-carousel-button="prev" type="button">&#8656;</button>
@@ -212,5 +212,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="scripts/carousel2.js"></script>
-
+<script defer src="scripts/scroll.js"></script>
 </html>

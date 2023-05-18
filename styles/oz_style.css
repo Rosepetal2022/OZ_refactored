@@ -511,16 +511,17 @@ html {
 /*NAV STYLE STARTS*/
 #main_nav {
   border-bottom: #244f26 8px solid;
+  opacity: .9;
 }
 
 .nav-item {
   font-size: 1rem;
 }
 
-.oz_logo_nav {
-  padding: 1rem;
-}
 
+.oz_logo_nav {
+  width: 10rem;
+}
 
 /*NAV STYLE ENDS*/
 
@@ -528,7 +529,8 @@ html {
 .carousel {
   border-top: #002D56 8px solid;
   width: 100%;
-  height: 70vh;
+  height: 25rem;
+  margin-top: 6.5rem;
   position: relative;
 }
 
@@ -609,15 +611,18 @@ html {
   padding-top: 1rem;
   padding-bottom: 3rem;
   width: 70%;
+  
 }
 
 .oz_mission_container--header {
   font-size: 5rem;
   margin-bottom: 2rem;
+
 }
 
 .oz_mission_container--p {
   font-size: 1rem;
+ 
 }
 
 .oz_mission_image {
@@ -672,7 +677,6 @@ html {
 .head_trainer--header {
   font-size: 1rem;
   width: 100%;
-  text-align: center;
 }
 
 .head_trainer--container {
@@ -773,9 +777,13 @@ html {
 
 /*THE_FARM BODY STYLE STARTS*/
 .farm--top-image {
-  background-image: cover;
+  display: block;
   width: 100%;
-  height: auto;
+  height: 25rem;
+  object-fit: cover;
+  object-position: 60%;
+  margin-top: 6.5rem;
+  position: relative;
   border-bottom: 10px solid #244f26;
 }
 
@@ -832,12 +840,14 @@ html {
 
 .our_team--header {
   font-size: 5rem;
-  width: 50rem;
-  padding: 1rem;
 }
 
 .our_team--header-text {
   font-size: 1rem;
+  color: #002D56;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
 }
 
 .our_team--shelley-title {
@@ -864,6 +874,9 @@ html {
 .our_team--staff-container {
   background-color: white;
   padding: 1.5rem;
+  border-bottom: 1px solid grey;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .our_team--staff-div {
@@ -874,8 +887,8 @@ html {
   color: #002D56;
   background-color: white;
   font-size: 3rem;
-  padding: 10rem 0 8rem 0;
   text-align: center;
+  padding-top: 4rem;
 }
 
 .our_team--staff-photo {
@@ -903,15 +916,19 @@ html {
   color: #002D56;
   font-size: 1rem;
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 /*OUR_TEAM STYLE ENDS*/
 
 /*HORSE_CARE STYLE STARTS*/
 .horse_care--top-image {
+  display: block;
   width: 100%;
-  height: auto;
+  height: 25rem;
+  object-fit: cover;
+  object-position: 60%;
+  margin-top: 6.5rem;
+  position: relative;
   border-bottom: 10px solid #244f26;
 }
 
@@ -1144,6 +1161,19 @@ html {
   margin-bottom: 3rem;
 }
 
+
+.hidden {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /*MEDIA QUERIES FOR SMALLER DESKTOPS AND SREENS*/
 @media screen and (max-width: 990px) {
   /* #main-nav {
@@ -1305,7 +1335,9 @@ html {
     align-items: center;
   }
 
- 
+ .our_team--staff-container {
+  padding: .5rem;
+ }
 
   .horse_care--leo {
     width: 20rem;
@@ -1372,10 +1404,13 @@ html {
 
   .our_team--header {
     width: 20rem;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
   }
 
+  .our_team--shelley-title {
+    font-size: 2.5rem;
+  }
   .our_team--header-text {
     margin: 1rem;
   }
