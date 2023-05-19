@@ -486,6 +486,13 @@ body.loading {
 
 /*Start of the refactor CSS*/
 
+:root {
+  --primary-color: #002D56;
+  --secondary-color: #244f26;
+  --tertiary-color: #ffffff;
+  --quaternary-color: black;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -496,7 +503,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  color: white;
+  color: var(--tertiary-color);
 }
 
 .main_div {
@@ -505,12 +512,12 @@ html {
 }
 
 .font {
-  color: white;
+  color: var(--tertiary-color);
 }
 
 /*NAV STYLE STARTS*/
 #main_nav {
-  border-bottom: #244f26 8px solid;
+  border-bottom: var(--secondary-color) 8px solid;
   opacity: .9;
 }
 
@@ -521,13 +528,15 @@ html {
 
 .oz_logo_nav {
   width: 10rem;
+  padding: .3rem;
+  margin-right: 1rem;
 }
 
 /*NAV STYLE ENDS*/
 
 /*CAROUSEL STYLE STARTS*/
 .carousel {
-  border-top: #002D56 8px solid;
+  border-top: var(--primary-color) 8px solid;
   width: 100%;
   height: 25rem;
   margin-top: 6.5rem;
@@ -580,12 +589,12 @@ html {
 
 .carousel-button:hover,
 .carousel-button:focus {
-  color: white;
+  color: var(--tertiary-color);
   background: rgba(0, 0, 0, .2);
 }
 
 .carousel-button:focus {
-  outline: 1px solid black;
+  outline: 1px solid var(--quaternary-color);
 }
 
 .prev {
@@ -603,7 +612,7 @@ html {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 2rem;
+  padding-top: 1rem;
 }
 
 .oz_mission_container {
@@ -611,7 +620,7 @@ html {
   padding-top: 1rem;
   padding-bottom: 3rem;
   width: 70%;
-  
+
 }
 
 .oz_mission_container--header {
@@ -622,14 +631,14 @@ html {
 
 .oz_mission_container--p {
   font-size: 1rem;
- 
+
 }
 
 .oz_mission_image {
   margin: 3rem;
   padding: 1rem;
-  background-color: white;
-  color: black;
+  background-color: var(--tertiary-color);
+  color: var(--quaternary-color);
   width: 30%;
   object-fit: contain;
   object-position: center;
@@ -680,8 +689,8 @@ html {
 }
 
 .head_trainer--container {
-  background-color: white;
-  color: black;
+  background-color: var(--tertiary-color);
+  color: var(--quaternary-color);
   width: 100%;
   padding-top: 3rem;
 }
@@ -697,8 +706,9 @@ html {
 
 .head_trainer--button {
   margin: 2rem;
-  text-align:center;
+  text-align: center;
 }
+
 .candid_photo--container {
   display: flex;
   justify-content: space-evenly;
@@ -742,8 +752,8 @@ html {
 }
 
 .sponsors {
-  background-color: white;
-  color: black;
+  background-color: var(--tertiary-color);
+  color: var(--quaternary-color);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -752,14 +762,14 @@ html {
 .sponsors_container--header {
   font-size: 3rem;
   margin-right: 2rem;
-  background-color: white;
-  color: black;
+  background-color: var(--tertiary-color);
+  color: var(--quaternary-color);
 }
 
 .sponsors_container--text {
   font-size: 1rem;
-  background-color: white;
-  color: black;
+  background-color: var(--tertiary-color);
+  color: var(--quaternary-color);
   padding: 1rem;
 }
 
@@ -784,12 +794,12 @@ html {
   object-position: 60%;
   margin-top: 6.5rem;
   position: relative;
-  border-bottom: 10px solid #244f26;
+  border-bottom: 10px solid var(--secondary-color);
 }
 
 .farm--header {
   font-size: 5rem;
-  margin: 2rem 1rem 2rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
 }
 
 .farm--second-header {
@@ -812,7 +822,7 @@ html {
 }
 
 .coursel_container {
-  border-top: #002D56 8px solid;
+  border-top: var(--primary-color) 8px solid;
   width: 100%;
   height: 70%;
   position: relative;
@@ -821,7 +831,7 @@ html {
 
 .tour--container {
   background-color: white;
-  color: #002D56;
+  color: var(--primary-color);
   padding: 3rem;
 }
 
@@ -844,7 +854,7 @@ html {
 
 .our_team--header-text {
   font-size: 1rem;
-  color: #002D56;
+  color: var(--primary-color);
   text-align: center;
   padding: 2rem;
   margin: 2rem;
@@ -868,15 +878,15 @@ html {
 }
 
 .our_team--main {
-  background-color: white;
+  background-color: var(--tertiary-color);
 }
 
 .our_team--staff-container {
-  background-color: white;
+  background-color: var(--tertiary-color);
   padding: 1.5rem;
   border-bottom: 1px solid grey;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 .our_team--staff-div {
@@ -884,8 +894,8 @@ html {
 }
 
 .our_team--staff-header {
-  color: #002D56;
-  background-color: white;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
   font-size: 3rem;
   text-align: center;
   padding-top: 4rem;
@@ -893,19 +903,19 @@ html {
 
 .our_team--staff-photo {
   width: 30rem;
-  border: 2px solid #002D56;
+  border: 2px solid var(--primary-color);
   padding: 1rem;
   height: auto;
 }
 
 .our_team--staff-title {
-  color: #002D56;
+  color: var(--primary-color);
   font-size: 2rem;
   text-align: center;
 }
 
 .our_team--staff-position {
-  color: #002D56;
+  color: var(--primary-color);
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
@@ -913,7 +923,7 @@ html {
 }
 
 .our_team--staff-text {
-  color: #002D56;
+  color: var(--primary-color);
   font-size: 1rem;
   text-align: center;
 }
@@ -929,7 +939,7 @@ html {
   object-position: 60%;
   margin-top: 6.5rem;
   position: relative;
-  border-bottom: 10px solid #244f26;
+  border-bottom: 10px solid var(--secondary-color);
 }
 
 .horse_care--header {
@@ -943,7 +953,7 @@ html {
 
 .care--main {
   padding: 0rem;
-  border-bottom: 20px solid #244f26;
+  border-bottom: 20px solid var(--secondary-color);
 }
 
 .care_photo {
@@ -978,11 +988,11 @@ html {
 }
 
 .horse_care--training-container {
-  background-color: white;
-  color: #002D56;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 1.25rem;
   padding: 5rem;
-  border-bottom: 20px solid #244f26;
+  border-bottom: 20px solid var(--secondary-color);
 }
 
 .horse_care--title {
@@ -1056,7 +1066,7 @@ html {
 
 .portfolio_picture {
   width: 30rem;
-  border: 3px solid white;
+  border: 3px solid var(--tertiary-color);
   margin: 2rem 2rem 0rem 2rem;
   ;
 }
@@ -1066,16 +1076,14 @@ html {
   text-align: center;
 }
 
-
-
 /*PORTFOLIO DESIGN ENDS*/
 
 
 /*FOOTER STYLE STARTS*/
 #footer {
-  background-color: white;
-  color: #002D56;
-  border-top: #244f26 solid 10px;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  border-top: var(--secondary-color) solid 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1115,7 +1123,7 @@ html {
 }
 
 .footer-div--logo {
-  border-top: #002D56 solid 20px;
+  border-top: var(--primary-color) solid 20px;
   text-align: center;
   padding-top: 1rem;
 }
@@ -1126,8 +1134,8 @@ html {
 }
 
 .bottom-footer {
-  background-color: #244f26;
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
   text-align: center;
   padding-top: 1.5rem;
   font-size: .75rem;
@@ -1139,6 +1147,8 @@ html {
 
 /*FOOTER STYLE ENDS*/
 
+
+/*DIVIDER AND LOGO UNIVERSAL STYLES STARTS*/
 .divider {
   width: 45rem;
 }
@@ -1161,12 +1171,13 @@ html {
 }
 
 .oz_logo--div {
-  text-align:center;
+  text-align: center;
   margin-bottom: 3rem;
 }
 
+/*DIVIDER AND LOGO UNIVERSAL STYLES ENDS*/
 
-
+/*SCROLLING EFFECT STYLE STARTS*/
 .hidden {
   opacity: 0;
   transform: translateY(100%);
@@ -1177,6 +1188,8 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
+/*SCROLLING EFFECT STYLE ENDS*/
 
 
 /*MEDIA QUERIES FOR SMALLER DESKTOPS AND SREENS*/
@@ -1191,6 +1204,7 @@ html {
     padding: auto;
   }
 
+  /*INDEX MEDIA QUERIES START FOR 990px*/
   .container--oz {
     flex-direction: column;
     align-items: center;
@@ -1213,9 +1227,9 @@ html {
     flex-direction: column;
   }
 
- #oz_blog--photo {
-  width: 10rem;
- }
+  #oz_blog--photo {
+    width: 10rem;
+  }
 
   .head_trainer--container {
     justify-content: space-evenly;
@@ -1225,6 +1239,7 @@ html {
   .head_trainer--button {
     text-align: center;
   }
+
   .head_trainer--image {
     padding-top: 80px;
     width: 50%;
@@ -1248,7 +1263,47 @@ html {
     justify-content: space-around;
     width: 100%;
   }
+  /*INDEX MEDIA QUERIES END FOR 990px*/
 
+  /*THE FARM MEDIA QUERIES START FOR 990px*/
+  .farm--div {
+    flex-direction: column;
+  }
+
+  .farm--div-mid {
+    flex-direction: column-reverse;
+  }
+  /*THE FARM MEDIA QUERIES END FOR 990px*/
+
+  /*OUR TEAM MEDIA QUERIES START FOR 990px*/
+  .our_team--shelley-container {
+    flex-direction: column-reverse;
+  }
+
+  .our_team--staff-container {
+    flex-direction: column;
+    padding: 3rem;
+  }
+  /*OUR TEAM MEDIA QUERIES END FOR 990px*/
+
+  /*HORSE CARE MEDIA QUERIES START FOR 990px*/
+  .care--main {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .care_photo {
+    width: 40rem;
+  }
+
+  .horse_care--main-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /*HORSE CARE MEDIA QUERIES END FOR 990px*/
+
+  /*PORTFOLIO MEDIA QUERIES START FOR 990px*/
   .portfolio_container {
     flex-direction: column;
     justify-content: center;
@@ -1263,52 +1318,24 @@ html {
     width: 30rem;
   }
 
-  .our_team--shelley-container {
-    flex-direction: column-reverse;
-  }
+  /*PORTFOLIO MEDIA QUERIES END FOR 990px*/
 
-  .our_team--staff-container {
-    flex-direction: column;
-    padding: 3rem;
-  }
-
-  .farm--div {
-    flex-direction: column;
-  }
-
-  .farm--div-mid {
-    flex-direction: column-reverse;
-  }
-
-  .care--main {
-    flex-direction: column-reverse;
-    text-align: center;
-
-  }
-
-  .care_photo {
-    width: 40rem;
-  }
-
-  .horse_care--main-div {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
+  /*UNIVERSAL DEIVER MEDIA QUERY FOR 990px*/
   .divider_white {
     width: 30rem;
   }
 }
 
 @media screen and (max-width: 768px) {
+
+  /*INDEX MEDIA QUERIES START FOR 768px*/
   .oz_mission_container {
     width: 30rem;
   }
 
   .dawson {
     width: 30rem;
-  }  
+  }
 
   .head_trainer--container {
     flex-direction: column;
@@ -1340,9 +1367,12 @@ html {
     align-items: center;
   }
 
- .our_team--staff-container {
-  padding: .5rem;
- }
+  /*INDEX MEDIA QUERIES END FOR 768px*/
+
+  /*OUR TEAM MEDIA QUERIES START FOR 768px*/
+  .our_team--staff-container {
+    padding: .5rem;
+  }
 
   .horse_care--leo {
     width: 20rem;
@@ -1351,7 +1381,9 @@ html {
   .care_photo {
     width: 25rem;
   }
+  /*OUR TEAM MEDIA QUERIES END FOR 768px*/
 
+  /*FOOTER MEDIA QUERY FOR 768px*/
   .footer-div {
     flex-direction: column;
     width: 100%;
@@ -1360,6 +1392,7 @@ html {
 
 @media screen and (max-width: 575px) {
 
+  /*INDEA MEDIA QUERIES START FOR 575px*/
   .oz_mission_container {
     width: 18rem;
     margin: 0rem;
@@ -1395,6 +1428,36 @@ html {
     width: 10rem;
   }
 
+  /*INDEX MEDIA QUERIES END FOR 575px*/
+
+  /*THE FARM MEDIA QUERIES START FOR 575px*/
+  .farm--image {
+    width: 20rem;
+  }
+
+  .horse_care--training-description {
+    width: 15rem;
+  }
+
+  .horse_care--text {
+    flex-direction: column;
+  }
+
+  .care_photo {
+    width: 20rem;
+  }
+
+  .horse_care--leo {
+    width: 15rem;
+  }
+
+  .horse_care--training-photo {
+    width: 15rem;
+  }
+
+  /*THE FARM MEDIA QUERIES END FOR 575px*/
+
+  /*OUR TEAM MEDIA QUERIES START FOR 575px*/
   .our_team--shelley-photo {
     width: 20rem;
   }
@@ -1416,43 +1479,20 @@ html {
   .our_team--shelley-title {
     font-size: 2.5rem;
   }
+
   .our_team--header-text {
     margin: 1rem;
   }
 
-  .farm--image {
-    width: 20rem;
-  }
+  /*OUR TEAM MEDIA QUERIES END FOR 575px*/
 
-  .horse_care--training-description {
-    width: 15rem;
-  }
-
-  .horse_care--text {
-    flex-direction: column;
-  }
-
-  .care_photo {
-    width:20rem;
-  }
-
-  .horse_care--leo {
-    width: 15rem;
-  }
-
-  .horse_care--training-photo {
-    width: 15rem;
-  }
-
-  .divider_white {
-    width: 15rem;
-  }
-  /*MEDIA QUERIES FOR PORTFOLIO*/
+  /*MEDIA QUERY FOR PORTFOLIO FOR 575px*/
   .portfolio_picture {
     width: 20rem;
     margin: auto;
   }
 
+  /*FOORTER MEDIA QUERIES START FOR 575px*/
   .footer-div {
     flex-direction: column;
     width: 100%;
@@ -1463,20 +1503,26 @@ html {
     justify-content: center;
 
   }
+  /*FOORTER MEDIA QUERIES END FOR 575px*/
 
-
+  /*UNIVERSAL DIVIDER MEDIA QUERY FOR 575px*/
+  .divider_white {
+    width: 15rem;
+  }
 
 }
 
 @media screen and (max-width: 300px) {
- .oz_mission_container {
-  width: 15rem;
- }
 
- .oz_mission_container--header {
-  width: 15rem;
- }
- 
+  /*INDEX MEDIA QUERIES START FOR 300px*/
+  .oz_mission_container {
+    width: 15rem;
+  }
+
+  .oz_mission_container--header {
+    width: 15rem;
+  }
+
   .dawson {
     width: 15rem;
   }
@@ -1495,12 +1541,9 @@ html {
     margin: 0;
     margin-top: 1rem;
   }
+  /*INDEX MEDIA QUERIES END FOR 300px*/
 
-  .portfolio_picture {
-    width: 15rem;
-    margin-left: auto;
-  }
-
+  /*OUR TEAM MEDIA QUERIES START FOR 300px*/
   .our_team--header {
     width: 15rem;
     font-size: 2.5rem;
@@ -1520,8 +1563,11 @@ html {
     width: 15rem;
   }
 
+  /*OUR TEAM MEDIA QUERIES END FOR 300px*/
+
+  /*HORSE CARE MEDIA QUERIES START FOR 300px*/
   .care_photo {
-    width:15rem;
+    width: 15rem;
   }
 
   .horse_care--leo {
@@ -1531,12 +1577,21 @@ html {
   .horse_care--training-photo {
     width: 10rem;
   }
+  /*HORSE CARE MEDIA QUERIES END FOR 300px*/
 
-  .divider_white {
+  /*PORTFOLIO MEDIA QUERY FOR 300px*/
+  .portfolio_picture {
     width: 15rem;
+    margin-left: auto;
   }
 
+  /*FOOTER MEDIA QUERY FOR 300px*/
   #footer-logo {
     width: 10rem;
+  }
+
+  /*UNIVERSAL MEDIA QUERY FOR DIVIDER AT 300px*/
+  .divider_white {
+    width: 15rem;
   }
 }
