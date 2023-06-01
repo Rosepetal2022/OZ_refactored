@@ -3,7 +3,7 @@
 	any backend code.
 */
 
-/*
+
 body.deskman {
   background-image: none;
   background-color: #fff;
@@ -98,7 +98,7 @@ body, select, input, textarea {
   across browsers of the 'list marker'
 */
 
-/*
+
 .deskman ul, .deskman ol {
   margin: 0 0 10px 0;
 }
@@ -131,12 +131,12 @@ body, select, input, textarea {
   font-size: 1.3em;
   font-style: italic;
 }
-*/
+
 
 /* ------------------------- in line elements and links ------------
 */
 
-/*
+
 .deskman hr {
   border-bottom: 1px solid #c2c2cc;
   border-top: 1px solid #fff;
@@ -169,7 +169,7 @@ body, select, input, textarea {
   text-decoration: none;
   color: #005826;
 }
-*/
+
 
 /* ------------------------- forms ----------------------------
   with using 'table-less' forms, I set the width of the labels and but break tags
@@ -180,7 +180,7 @@ body, select, input, textarea {
   on the containing element
 */
 
-/*
+
 .deskman fieldset, fieldset.deskman {
   padding: 5px 10px;
 }
@@ -244,8 +244,8 @@ body, select, input, textarea {
   traditionaly, the first row in a table if put inside of the 'thead' (table head) tag
   the first element of each row is then put into a 'th' (table headline) cell tag
 
-/* ------------------------- blockquote -----------------------
-*/
+/* ------------------------- blockquote -----------------------*/
+
 .deskman blockquote {
 	float: left;
 	margin-bottom:45px;
