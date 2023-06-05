@@ -49,6 +49,8 @@ body, select, input, textarea {
 }
 /* ------------------------- headlines and body copy ------------
 */
+
+
 .deskman h1 {
   font-size: 4em;
   font-weight: bold;
@@ -93,10 +95,12 @@ body, select, input, textarea {
 .deskman p {
 }
 
+
 /* ------------------------- lists ------------------------------
   in unorderd lists, it is easier to use background images due to the inconsitancy
   across browsers of the 'list marker'
 */
+
 
 
 .deskman ul, .deskman ol {
@@ -240,6 +244,7 @@ body, select, input, textarea {
 .deskman .inline_form label, .deskman.inline_form label {
   width: auto;
 }
+
 /* ------------------------- styled tables ----------------------
   traditionaly, the first row in a table if put inside of the 'thead' (table head) tag
   the first element of each row is then put into a 'th' (table headline) cell tag
